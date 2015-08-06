@@ -1,0 +1,40 @@
+.acfv-author {
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	color: #34495E;
+	padding: 9px;
+	-webkit-transition: none;
+	transition: none;
+}
+
+.acfv-author:hover {
+	color: #22313F;
+}
+
+.acfv-author .acfv__logo {
+	width: 190px;
+	height: 190px;
+	-webkit-transition: all 0.2s ease;
+	transition: all 0.2s ease;
+}
+
+.acfv-author:hover .acfv__logo{
+	-webkit-transform: scale(0.95);
+	transform: scale(0.95);
+}
+
+.acfv-author .acfv__logo .logo__path {
+	fill: #34495E;
+}
+
+.acfv-author:hover .acfv__logo .logo__path {
+	fill: #22313F;
+}
+
+#poststuff .acfv-author .inside {
+	font-size: 14px;
+	margin: 0px;
+	padding: 0px;
+	padding-bottom: 20px;
+}
