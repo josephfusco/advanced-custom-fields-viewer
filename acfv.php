@@ -2,12 +2,11 @@
 /*
  * Plugin Name: Advanced Custom Fields Viewer
  * Version: 1.1.4
- * Plugin URI: http://josephfus.co/
+ * Plugin URI: https://wordpress.org/plugins/advanced-custom-fields-viewer/
  * Description: View Advanced Custom Fields data on the front end of your theme while developing.
  * Author: Joseph Fusco
  * Author URI: http://josephfus.co/
- * Requires at least: 3.9
- * Tested up to: 4.1.1
+ * Tested up to: 4.4
  *
  * @package WordPress
  * @author Joseph Fusco
