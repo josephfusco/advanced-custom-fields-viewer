@@ -6,7 +6,6 @@
  * Description: View Advanced Custom Fields data on the front end of your theme while developing.
  * Author: Joseph Fusco
  * Author URI: http://josephfus.co/
- * Tested up to: 4.4
  *
  * @package WordPress
  * @author Joseph Fusco
