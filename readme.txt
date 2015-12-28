@@ -21,11 +21,11 @@ If you are working with a large number of fields in Elliot Condon’s Advanced C
 
 == Installation ==
 
-1. Upload `advanced-custom-fields-viewer` to the `/wp-content/plugins` directory
-2. Activate the plugin through the `Plugins` menu in WordPress
-3. Click on the new menu item `Viewer` for plugin options
+1. Upload `advanced-custom-fields-viewer` to the `/wp-content/plugins` directory.
+2. Activate the plugin through the `Plugins` menu in WordPress.
+3. Click on the new menu item `Viewer` for plugin options.
 4. Hover top left of the front of your site to see the toggle button for all available ACF fields for the current page, as well as the options page if available.
-5. Use `acfv( $array )` to view arrays outside of Advanced Custom Fields
+5. Use `acfv( $array )` to view arrays outside of Advanced Custom Fields.
 
 == Screenshots ==
 
@@ -37,7 +37,7 @@ If you are working with a large number of fields in Elliot Condon’s Advanced C
 
 = 1.1.5 =
 * Moved settings menu from top level menu to child of settings.
-* Renamed settings menu from `Viewer` to `ACF Viewer`
+* Renamed settings menu from `Viewer` to `ACF Viewer`.
 * Removed author logo for a cleaner admin UI.
 * Fixed minor typos.
 * Improved behind the scenes formatting.
