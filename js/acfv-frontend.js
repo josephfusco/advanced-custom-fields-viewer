@@ -4,13 +4,11 @@ $j(document).ready(function(){
 	$j('#acfv-options-viewer').hide();
 	$j('.acfv-btn-col .acfv-btn:nth-child(3)').addClass("acfv-active");
 
-
 	if ($j("#acfv-btn-custom").hasClass("acfv-active")) {
 		$j('#acfv-custom-custom').show();
 		$j('#acfv-current-viewer').hide();
 		$j('#acfv-options-viewer').hide();
 	}
-
 
 	// open viewer
 	$j('#acfv-toggle').on("click", function(){
@@ -18,7 +16,6 @@ $j(document).ready(function(){
 		$j('html').addClass('acfv-active');
 		$j(this).hide();
 	});
-
 
 	// menu clicks
 	$j('#acfv-btn-custom').on("click", function(){
