@@ -10,7 +10,7 @@ function add_frontend_viewer(){
 		<?php
 
 		$defaults = array( 'option_1' => 'print_r' );
-	    $output = get_option( 'option_output', $defaults );
+		$output = get_option( 'option_output', $defaults );
 
 		?>
 
@@ -21,7 +21,8 @@ function add_frontend_viewer(){
 		</span>
 
 		<div id="acfv-click-layer"></div>
-	    <div id="acfv-wrap" class="<?php if(is_admin_bar_showing()){ echo 'adminbar-visible';} ?>">
+		<div id="acfv-wrap" class="<?php if(is_admin_bar_showing()){ echo 'adminbar-visible';} ?>">
+			
 	    	<?php $acfv_fields = get_fields(); ?>
 	    	<?php $acfv_fields_option = get_fields('option'); ?>
 	    	<table>
