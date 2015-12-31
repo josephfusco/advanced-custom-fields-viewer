@@ -35,6 +35,10 @@ If you are working with a large number of fields in Elliot Condon’s Advanced C
 
 == Changelog ==
 
+= 1.1.6 =
+* Fix broken link to plugin settings page.
+* Minor code improvements.
+
 = 1.1.5 =
 * Moved settings menu from top level menu to child of settings.
 * Renamed settings menu from `Viewer` to `ACF Viewer`.

@@ -1,15 +1,11 @@
 <?php
 /*
  * Plugin Name: Advanced Custom Fields Viewer
- * Version: 1.1.5
+ * Version: 1.1.6
  * Plugin URI: https://wordpress.org/plugins/advanced-custom-fields-viewer/
  * Description: View Advanced Custom Fields data on the front end of your theme while developing.
  * Author: Joseph Fusco
  * Author URI: http://josephfus.co/
- *
- * @package WordPress
- * @author Joseph Fusco
- * @since 1.0.0
  */
 
 if ( !defined( 'ABSPATH' ) ) exit;
@@ -24,5 +20,5 @@ function acfv( $arg_custom = NULL ){
 	global $acfv;
 
 	$acfv = $arg_custom;
-	
+
 }
