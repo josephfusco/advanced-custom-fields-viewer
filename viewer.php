@@ -14,7 +14,7 @@ function add_frontend_viewer(){
 	$acfv_fields = get_fields();
 	$acfv_fields_option = get_fields('option');
 	
-	$acfv_adminbar = is_admin_bar_showing() ? ' class="adminbar-visible"' : '';
+	$acfv_adminbar = is_admin_bar_showing() ? 'adminbar-visible' : '';
 
 	?>
 
