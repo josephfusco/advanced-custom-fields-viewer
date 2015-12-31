@@ -31,7 +31,9 @@ If you are working with a large number of fields in Elliot Condon’s Advanced C
 
 1. Plugin Settings
 
-2. The Front End Viewer
+2. Front End Toggle Button
+
+3. Front End Viewer
 
 == Changelog ==
 
