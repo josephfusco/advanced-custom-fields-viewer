@@ -15,6 +15,8 @@ function add_frontend_viewer(){
 	$acfv_fields_option = get_fields('option');
 	
 	$acfv_adminbar = is_admin_bar_showing() ? 'adminbar-visible' : '';
+	
+	$plugin_dir = current(explode("/", plugin_basename( __FILE__ )));
 
 	?>
 
@@ -38,7 +40,7 @@ function add_frontend_viewer(){
 					<span id="acfv-btn-current" class="acfv-btn">Current Page</span>
 					<span id="acfv-btn-options" class="acfv-btn">Options Page</span>
 					<div class="acfv-footer">
-						<a href="<?php echo admin_url('http://wp.dev/wp-admin/options-general.php?page=advanced-custom-fields-viewer%2Fadmin%2Foptions.php'); ?>" class="acfv-link">
+						<a href="<?php echo admin_url('/options-general.php?page=' . $plugin_dir . '%2Fadmin%2Foptions.php'); ?>" class="acfv-link">
 							<span class="dashicons dashicons-admin-generic"></span>
 						</a>
 						<a href="<?php echo admin_url(); ?>" class="acfv-link">
