@@ -53,5 +53,23 @@ $j(document).ready(function(){
 		$j('#acfv-toggle').show();
 	});
 
-
+    // keyboard shortcuts
+    var down = {};
+    $j(document).keydown(function(e) {
+        down[e.keyCode] = true;
+    }).keyup(function(e) {
+        // "shift" + "v"
+        if (down[16] && down[86]) {
+            if( $j('html').hasClass('acfv-active') ){
+                $j('#acfv-btn-close').trigger( "click" );
+            } else {
+                $j('#acfv-toggle').trigger( "click" );
+            }
+        }
+        // "esc"
+        if (down[27]) {
+            $j('#acfv-btn-close').trigger( "click" );
+        }
+        down[e.keyCode] = false;
+    });
 });
