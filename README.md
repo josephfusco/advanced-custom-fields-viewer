@@ -8,8 +8,9 @@ If you are working with a large number of fields in [Advanced Custom Fields](htt
 
 ### Features
 
-* Viewer button hidden until needed in the top left corner of your theme
-* 3 different color schemes for the front end viewer
+* Viewer button hidden until needed in the top left corner of your theme.
+* 3 different color schemes for the front end viewer - Dark, Light, & Transparent.
+* Keyboard shortcuts! `shift` + `v` toggles viewer.
 
 ### Advanced Features
 
