@@ -37,21 +37,21 @@ function acfv_settings_page() {
 						        <tr valign="top">
                                     <td>
                                         <?php
-                                        $defaults = array( 'option_1' => 'print_r' );
+                                        $defaults = array( 'output' => 'print_r' );
                                         $options = get_option( 'acfv_option_output', $defaults );
                                         ?>
                                         <fieldset>
-                                            <h2 style="padding-left:0;">Output</h2>
+                                            <h2 style="padding-left:0;">Output Function</h2>
                                             <div>
                                             	<label for="option_print_r">
-                                            		<input id="option_print_r" type="radio" name="acfv_option_output[option_1]" value="print_r"<?php checked( 'print_r' == $options['option_1'] ); ?> />
-                                            		<span>print_r</span>
+                                            		<input id="option_print_r" type="radio" name="acfv_option_output[output]" value="print_r"<?php checked( 'print_r' == $options['output'] ); ?> />
+                                            		<span><code>print_r()</code></span>
                                             	</label>
                                             </div>
                                             <div>
                                                 <label for="option_var_dump">
-                                            		<input id="option_var_dump" type="radio" name="acfv_option_output[option_1]" value="var_dump"<?php checked( 'var_dump' == $options['option_1'] ); ?> />
-                                            		<span>var_dump</span>
+                                            		<input id="option_var_dump" type="radio" name="acfv_option_output[output]" value="var_dump"<?php checked( 'var_dump' == $options['output'] ); ?> />
+                                            		<span><code>var_dump()</code></span>
                                             	</label>
                                             </div>
                                         </fieldset>
@@ -60,26 +60,26 @@ function acfv_settings_page() {
 						        <tr valign="top">
                                     <td>
         						        <?php
-        						        $defaults = array( 'option_2' => 'dark'	);
+        						        $defaults = array( 'theme' => 'dark' );
         						        $options = get_option( 'acfv_option_color_scheme', $defaults );
         						        ?>
                                         <fieldset>
                                             <h2 style="padding-left:0;">Viewer Color Scheme</h2>
                                             <div>
                                                 <label for="option_dark">
-                                                    <input id="option_dark" type="radio" name="acfv_option_color_scheme[option_2]" value="dark"<?php checked( 'dark' == $options['option_2'] ); ?> />
+                                                    <input id="option_dark" type="radio" name="acfv_option_color_scheme[theme]" value="dark"<?php checked( 'dark' == $options['theme'] ); ?> />
                                                     <span>Dark</span>
                                                 </label>
                                             </div>
                                             <div>
                                                 <label for="option_light">
-                                                    <input id="option_light" type="radio" name="acfv_option_color_scheme[option_2]" value="light"<?php checked( 'light' == $options['option_2'] ); ?> />
+                                                    <input id="option_light" type="radio" name="acfv_option_color_scheme[theme]" value="light"<?php checked( 'light' == $options['theme'] ); ?> />
                                                     <span>Light</span>
                                                 </label>
                                             </div>
                                             <div>
                                                 <label for="option_transparent">
-                                                    <input id="option_transparent" type="radio" name="acfv_option_color_scheme[option_2]" value="transparent"<?php checked( 'transparent' == $options['option_2'] ); ?> />
+                                                    <input id="option_transparent" type="radio" name="acfv_option_color_scheme[theme]" value="transparent"<?php checked( 'transparent' == $options['theme'] ); ?> />
                                                     <span>Transparent</span>
                                                 </label>
                                             </div>
@@ -102,9 +102,3 @@ function acfv_settings_page() {
 	</div>
 </div>
 <?php }
-
-register_deactivation_hook( __FILE__, 'acfv_deactivation' );
-function acfv_deactivation() {
-    delete_option( 'acfv_option_output' );
-    delete_option( 'acfv_option_color_scheme' );
-}

@@ -8,8 +8,8 @@ function add_frontend_viewer(){
 		return;
 	}
 
-	$defaults = array( 'option_1' => 'print_r' );
-	$output = get_option( 'option_output', $defaults );
+	$defaults = array( 'output' => 'print_r' );
+	$output = get_option( 'acfv_option_output', $defaults );
 
 	$acfv_fields = get_fields();
 	$acfv_fields_option = get_fields( 'option' );
@@ -50,18 +50,18 @@ function add_frontend_viewer(){
 				</td>
 				<td>
 					<pre id="acfv-current-viewer"><?php
-						if ( $output['option_1'] == 'print_r' ) {
+						if ( $output['output'] == 'print_r' ) {
 							print_r( $acfv_fields );
-						} elseif( $output['option_1'] == 'var_dump' ) {
+						} elseif( $output['output'] == 'var_dump' ) {
 							var_dump( $acfv_fields );
 						} else {
 							echo 'No option has been selected.';
 						}
 					?></pre>
 					<pre id="acfv-options-viewer"><?php
-						if ( $output['option_1'] == 'print_r' ) {
+						if ( $output['output'] == 'print_r' ) {
 							print_r( $acfv_fields_option );
-						} elseif( $output['option_1'] == 'var_dump' ) {
+						} elseif( $output['output'] == 'var_dump' ) {
 							var_dump( $acfv_fields_option );
 						} else {
 							echo 'No option has been selected.';
@@ -69,9 +69,9 @@ function add_frontend_viewer(){
 					?></pre>
 					<?php if ($acfv != NULL) : ?>
 						<pre id="acfv-custom-viewer"><?php
-							if ( $output['option_1'] == 'print_r' ) {
+							if ( $output['output'] == 'print_r' ) {
 								print_r($acfv);
-							} elseif( $output['option_1'] == 'var_dump' ) {
+							} elseif( $output['output'] == 'var_dump' ) {
 								var_dump($acfv);
 							} else {
 								echo 'No option has been selected.';
@@ -88,11 +88,11 @@ add_action( 'wp_footer','add_frontend_viewer' );
 
 function acfv_frontend_scripts_and_styles() {
 
-	$theme = get_option('option_color_scheme');
+	$theme = get_option( 'acfv_option_color_scheme' );
 
-	if($theme['option_2'] == 'dark') {
+	if( $theme['theme'] == 'dark' ) {
 		wp_enqueue_style( 'acfv_theme_dark', plugins_url( '/themes/dark.css' , __FILE__ ) );
-	} elseif($theme['option_2'] == 'light') {
+	} elseif( $theme['theme'] == 'light' ) {
 		wp_enqueue_style( 'acfv_theme_dark', plugins_url( '/themes/light.css' , __FILE__ ) );
 	} else {
 		wp_enqueue_style( 'acfv_theme_transparent', plugins_url( '/themes/transparent.css' , __FILE__ ) );
