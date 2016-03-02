@@ -21,6 +21,7 @@ html.acfv-active {
 }
 
 #acfv-wrap {
+    display: table;
 	position: fixed;
 	background-color: #333;
 	color: #BBB;
@@ -72,6 +73,7 @@ html.acfv-active {
 }
 
 #acfv-wrap pre {
+    word-break: break-all;
 	white-space: pre-wrap;
 	overflow-y: auto;
 	background-color: #222;
@@ -151,6 +153,7 @@ span.acfv-label {
 	color: #CCC;
 	font-family: monospace;
 	margin-bottom: 15px;
+    margin-right: 10px;
 	-webkit-transition: color 0.1s ease;
 	-moz-transition: color 0.1s ease;
 	-o-transition: color 0.1s ease;
