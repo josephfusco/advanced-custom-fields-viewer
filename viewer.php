@@ -90,13 +90,14 @@ function acfv_frontend_scripts_and_styles() {
 
 	$theme = get_option( 'acfv_option_color_scheme' );
 
-	if( $theme['theme'] == 'dark' ) {
-		wp_enqueue_style( 'acfv_theme_dark', plugins_url( '/themes/dark.css' , __FILE__ ) );
-	} elseif( $theme['theme'] == 'light' ) {
-		wp_enqueue_style( 'acfv_theme_dark', plugins_url( '/themes/light.css' , __FILE__ ) );
+	if ( $theme['theme'] == 'transparent' ) {
+        wp_enqueue_style( 'acfv_theme_transparent', plugins_url( '/themes/transparent.css' , __FILE__ ) );
+	} elseif ( $theme['theme'] == 'light' ) {
+		wp_enqueue_style( 'acfv_theme_light', plugins_url( '/themes/light.css' , __FILE__ ) );
 	} else {
-		wp_enqueue_style( 'acfv_theme_transparent', plugins_url( '/themes/transparent.css' , __FILE__ ) );
+		wp_enqueue_style( 'acfv_theme_dark', plugins_url( '/themes/dark.css' , __FILE__ ) );
 	}
+
 	wp_enqueue_style( 'dashicons' );
 	wp_enqueue_script( 'acfv_frontend_js', plugins_url( '/js/acfv-frontend.js', __FILE__ ),array('jquery'),'',true );
 
