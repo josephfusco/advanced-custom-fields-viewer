@@ -1,4 +1,4 @@
-# Advanced Custom Fields Viewer [![License](https://img.shields.io/badge/license-GPL--2.0%2B-green.svg)](http://www.gnu.org/licenses/gpl-2.0.html) ![WordPress Version](https://img.shields.io/wordpress/plugin/v/advanced-custom-fields-viewer.svg)
+# Advanced Custom Fields Viewer [![License](https://img.shields.io/badge/license-GPL--2.0%2B-green.svg)](http://www.gnu.org/licenses/gpl-2.0.html) [![WordPress Version](https://img.shields.io/wordpress/plugin/v/advanced-custom-fields-viewer.svg)](https://wordpress.org/plugins/advanced-custom-fields-viewer/)
 
 View Advanced Custom Fields data on the front end of your theme while developing.
 
