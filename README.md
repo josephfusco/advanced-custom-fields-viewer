@@ -1,4 +1,4 @@
-# Advanced Custom Fields Viewer [![WordPress Version](https://img.shields.io/wordpress/plugin/v/advanced-custom-fields-viewer.svg)](https://wordpress.org/plugins/advanced-custom-fields-viewer/)
+# Advanced Custom Fields Viewer [![WordPress Version](https://img.shields.io/wordpress/plugin/v/advanced-custom-fields-viewer.svg)](https://wordpress.org/plugins/advanced-custom-fields-viewer/) [![Donate](https://img.shields.io/badge/donate-PayPal-brightgreen.svg)](https://www.paypal.me/whitetaildevelopment)
 
 View Advanced Custom Fields data on the front end of your theme while developing.
 
