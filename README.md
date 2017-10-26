@@ -13,3 +13,7 @@ If you are working with a large number of fields in [Advanced Custom Fields](htt
 ### Advanced Features
 
 Use the function `acfv( $array )` to view non ACF arrays in the viewer.
+
+<a target='_blank' rel='nofollow' href='https://app.codesponsor.io/link/3iBBzXvUuHDVnDQaJWDxZfNw/josephfusco/advanced-custom-fields-viewer'>
+  <img alt='Sponsor' width='888' height='68' src='https://app.codesponsor.io/embed/3iBBzXvUuHDVnDQaJWDxZfNw/josephfusco/advanced-custom-fields-viewer.svg' />
+</a>
