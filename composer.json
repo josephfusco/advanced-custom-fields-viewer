@@ -1,0 +1,19 @@
+{
+  "name": "josephfusco/advanced-custom-fields-viewer",
+  "description": "View Advanced Custom Fields data on the front end of your theme while developing.",
+  "keywords": ["wordpress", "plugin", "acf"],
+  "homepage": "https://github.com/josephfusco/advanced-custom-fields-viewer",
+  "license": "GPLv2 or Later",
+  "authors": [
+    {
+      "name": "Joseph Fusco",
+      "email": "hello@josephfus.co",
+      "homepage": "https://josephfus.co/"
+    }
+  ],
+  "type": "wordpress-plugin",
+  "require": {
+    "php": ">=5.3.2",
+    "composer/installers": "v1.0.6"
+  }
+}
