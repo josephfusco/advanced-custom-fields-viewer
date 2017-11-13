@@ -40,9 +40,6 @@ Contributions are welcome on GitHub. https://github.com/josephfusco/advanced-cus
 
 == Changelog ==
 
-= 1.2.1 =
-* Add composer support.
-
 = 1.2 =
 * Fixed CSS conflict with word-break forcing viewer to appear at certain screen widths.
 * Added keyboard shortcuts to toggle viewer menu.
