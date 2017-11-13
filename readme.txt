@@ -40,6 +40,10 @@ Contributions are welcome on GitHub. https://github.com/josephfusco/advanced-cus
 
 == Changelog ==
 
+= 1.2.1 =
+* Trigger notification for last forgotten commit that prevented plugin activation.
+* Clean up unused files.
+
 = 1.2 =
 * Fixed CSS conflict with word-break forcing viewer to appear at certain screen widths.
 * Added keyboard shortcuts to toggle viewer menu.

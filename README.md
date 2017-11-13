@@ -1,4 +1,6 @@
-# Advanced Custom Fields Viewer [![WordPress](https://img.shields.io/wordpress/plugin/v/advanced-custom-fields-viewer.svg)](https://wordpress.org/plugins/advanced-custom-fields-viewer/) [![WordPress](https://img.shields.io/wordpress/plugin/dt/advanced-custom-fields-viewer.svg)](https://wordpress.org/plugins/advanced-custom-fields-viewer/)
+# Advanced Custom Fields Viewer
+
+[![License](https://img.shields.io/badge/license-GPL--2.0%2B-green.svg)](http://www.gnu.org/licenses/gpl-2.0.html)
 
 View Advanced Custom Fields data on the front end of your theme while developing.
 
@@ -13,7 +15,3 @@ If you are working with a large number of fields in [Advanced Custom Fields](htt
 ### Advanced Features
 
 Use the function `acfv( $array )` to view non ACF arrays in the viewer.
-
-<a target='_blank' rel='nofollow' href='https://app.codesponsor.io/link/3iBBzXvUuHDVnDQaJWDxZfNw/josephfusco/advanced-custom-fields-viewer'>
-  <img alt='Sponsor' width='888' height='68' src='https://app.codesponsor.io/embed/3iBBzXvUuHDVnDQaJWDxZfNw/josephfusco/advanced-custom-fields-viewer.svg' />
-</a>
